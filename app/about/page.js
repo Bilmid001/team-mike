@@ -16,117 +16,162 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-white">
+
+      <main className="min-h-screen bg-[#f8fafc]">
 
         {/* ── HERO ── */}
-        <section className="py-16 lg:py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              {/* Left */}
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+              {/* LEFT */}
               <div>
-                <h1 className="text-3xl lg:text-5xl font-extrabold text-primary mb-4 leading-tight">
+                <h1 className="text-4xl lg:text-5xl font-extrabold text-primary mb-4">
                   About TalentFlow
                 </h1>
-                <h2 className="text-xl lg:text-2xl font-extrabold text-gray-900 mb-6 leading-snug">
-                  <span className="text-[#F59E0B]">TalentFlow</span> Is A Modern Learning
-                  Platform Designed To Empower Students.
+
+                <h2 className="text-2xl lg:text-3xl font-extrabold text-gray-900 leading-snug mb-6">
+                  <span className="text-[#F59E0B]">TalentFlow</span> Is A Modern<br />
+                  Learning Platform Designed <br />To Empower Students.
                 </h2>
+
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
                   We provide a structured and engaging environment where users can access courses,
                   complete assignments, track progress, and collaborate seamlessly — all in one place.
                 </p>
+
                 <p className="text-gray-500 text-sm leading-relaxed mb-3">
                   Our mission is to simplify the learning experience by bringing everything together
                   into a single, intuitive platform that supports real growth and practical development.
                 </p>
+
                 <p className="text-gray-500 text-sm leading-relaxed mb-8">
-                  At TalentFlow, we are committed to helping learners stay consistent, build valuable
-                  skills, and achieve their goals with confidence.
+                  At TalentFlow, we are committed to helping learners stay consistent,
+                  build valuable skills, and achieve their goals with confidence.
                 </p>
+
                 <Link
                   href="/signup"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-all text-sm shadow-md"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white text-sm font-semibold rounded-lg shadow-md hover:bg-primary-dark transition"
                 >
                   Join Us <ArrowRight size={16} />
                 </Link>
               </div>
-              {/* Right image collage */}
-              <div className="flex flex-col gap-4">
-                <div className="w-full h-52 rounded-2xl overflow-hidden shadow-sm">
-                  <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" alt="Office" className="w-full h-full object-cover" />
-                </div>
-                <div className="w-4/5 h-44 rounded-2xl overflow-hidden shadow-sm self-end bg-blue-50">
-                  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Students" className="w-full h-full object-cover" />
-                </div>
+
+              {/* RIGHT (OVERLAPPING IMAGES) */}
+              <div className="relative w-full h-[320px] ">
+
+                {/* background shape */}
+                <div className="absolute right-0 top-6 w-[85%] h-[270px] bg-blue-100 rounded-2xl"></div>
+
+                {/* top image */}
+                <div className="absolute right-6 top-0 w-[60%] h-[200px] rounded-2xl overflow-hidden shadow-lg">
+                <img src="/images/Rectangle14.png" className="w-full h-full object-cover" />
               </div>
+
+              {/* bottom image */}
+              <div className="absolute left-0 bottom-[-90px] w-[70%] h-[200px] rounded-2xl overflow-hidden shadow-lg">
+                <img src="/images/Rectangle13.png" className="w-full h-full object-cover" />
+              </div>
+
+              </div>
+
             </div>
           </div>
         </section>
 
-        {/* ── EMPOWERING YOUR LEARNING JOURNEY ── */}
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left image */}
-              <div className="h-72 lg:h-80 rounded-2xl overflow-hidden shadow-lg">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700&q=80" alt="Learning" className="w-full h-full object-cover" />
+        {/* ── FEATURES ── */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+              {/* LEFT IMAGE */}
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img src="/images/Section.png" className="w-full h-[320px] object-cover" />
               </div>
-              {/* Right */}
+
+              {/* RIGHT TEXT */}
               <div>
-                <p className="text-[#F59E0B] font-semibold text-sm mb-2">Features</p>
-                <h2 className="text-2xl lg:text-3xl font-extrabold text-gray-900 mb-5 leading-tight">
-                  Empowering Your Learning Journey
+                <p className="text-primary font-semibold text-sm mb-2 text-[22px]">Features</p>
+
+                <h2 className="text-3xl font-extrabold text-gray-900 mb-5 leading-tight text-[40px]">
+                  Empowering Your <br />Learning Journey
                 </h2>
-                <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  At TalentFlow, we are committed to providing a seamless and effective learning
-                  experience across every stage of your journey.
+
+                <p className="text-gray-500 text-sm mb-3 leading-relaxed">
+                  At TalentFlow, we are committed to providing a seamless and effective learning experience across every stage of your journey.
                 </p>
-                <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  Our goal is to help learners stay focused, build clarity around their goals, and
-                  grow with confidence through structured learning and consistent practice.
+
+                <p className="text-gray-500 text-sm mb-3 leading-relaxed">
+                  Our goal is to help learners stay focused, build clarity around their goals, and grow with confidence through structured learning and consistent practice.
                 </p>
-                <p className="text-gray-500 text-sm leading-relaxed mb-3">
-                  While information is easily accessible online, true growth comes from guided
-                  learning and real application — and that&apos;s what TalentFlow is built to deliver.
+
+                <p className="text-gray-500 text-sm mb-3 leading-relaxed">
+                  While information is easily accessible online, true growth comes from guided learning and real application — and that&apos;s what TalentFlow is built to deliver.
                 </p>
-                <p className="text-gray-500 text-sm leading-relaxed mb-6">Learn smarter. Grow faster.</p>
+
+                <p className="text-gray-500 text-sm mb-6">Learn smarter. Grow faster.</p>
+
                 <Link
                   href="/courses"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-all text-sm shadow-md"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white text-sm font-semibold rounded-lg shadow-md hover:bg-primary-dark transition"
                 >
                   Learn More <ArrowRight size={16} />
                 </Link>
               </div>
+
             </div>
           </div>
         </section>
 
-        {/* ── WHY CHOOSE TALENTFLOW ── */}
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <p className="text-primary font-semibold text-sm mb-2">Our Benefits</p>
-              <h2 className="text-2xl lg:text-3xl font-extrabold text-gray-900 mb-3">
+        {/* ── BENEFITS ── */}
+        <section className="py-20 bg-[#f8fafc]">
+          <div className="max-w-7xl mx-auto px-6">
+
+            <div className="text-center mb-14">
+              <p className="text-primary font-semibold text-sm mb-4 text-[22px]">Our Benefits</p>
+
+              <h2 className="text-3xl font-extrabold text-gray-900 mb-3">
                 Why Choose TalentFlow
               </h2>
+
               <p className="text-gray-500 text-sm max-w-md mx-auto">
-                By joining TalentFlow, you gain access to a powerful learning environment
-                designed to help you succeed.
+                By joining TalentFlow, you gain access to a powerful learning environment designed to help you succeed.
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {benefits.map((b) => (
-                <div key={b.number} className="bg-blue-50/70 rounded-2xl p-7 hover:shadow-md transition-shadow">
-                  <p className="text-primary font-extrabold text-2xl mb-4 opacity-60">{b.number}</p>
-                  <h3 className="font-bold text-gray-900 text-base mb-2">{b.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{b.desc}</p>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+              {benefits.map((b, i) => (
+                <div
+                  key={b.number}
+                  className={`rounded-2xl p-7 transition ${
+                    i % 2 === 0
+                      ? 'bg-blue-100'
+                      : 'bg-white shadow-sm'
+                  }`}
+                >
+                  <p className="text-primary font-extrabold text-2xl mb-4 opacity-60">
+                    {b.number}
+                  </p>
+
+                  <h3 className="font-bold text-gray-900 mb-2">
+                    {b.title}
+                  </h3>
+
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    {b.desc}
+                  </p>
                 </div>
               ))}
+
             </div>
+
           </div>
         </section>
 
       </main>
+
       <Footer />
     </>
   );

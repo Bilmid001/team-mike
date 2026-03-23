@@ -115,8 +115,8 @@ export default function Navbar() {
                                   href="/courses"
                                   className={`text-sm flex items-center gap-1.5 hover:text-primary transition-colors ${
                                     item === 'Advanced UI Design (Figma)'
-                                      ? 'text-primary font-medium'
-                                      : 'text-gray-600'
+                                      // ? 'text-primary font-medium'
+                                      // : 'text-gray-600'
                                   }`}
                                   onClick={() => setCoursesOpen(false)}
                                 >

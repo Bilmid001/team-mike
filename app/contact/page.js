@@ -101,11 +101,11 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div>
                   <p className="font-bold text-gray-900 text-base mb-1">TalentFlow</p>
-                  <p className="text-gray-500 text-sm leading-relaxed">
+                  <p className="font-bold text-gray-500 text-sm leading-relaxed">
                     1234 Maplewood Drive Springfield, IL 62704, United State
                   </p>
-                  <p className="text-gray-700 text-sm font-medium mt-2">+1 (555) 123-4567</p>
-                  <p className="text-gray-700 text-sm">hello@talentflow.com</p>
+                  <p className="font-bold text-gray-700 text-sm mt-2">+1 (555) 123-4567</p>
+                  <p className="font-bold text-gray-700 text-sm">hello@talentflow.com</p>
                 </div>
 
                 {/* Map embed placeholder — same style as Figma */}

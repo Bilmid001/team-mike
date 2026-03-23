@@ -40,6 +40,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/courses/page.js"
+    ],
+    "/verify-code/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/verify-code/page.js"
+    ],
+    "/set-password/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/set-password/page.js"
     ]
   }
 }

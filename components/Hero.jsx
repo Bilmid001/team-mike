@@ -48,7 +48,7 @@ export default function Hero() {
             {/* Foreground image — smaller card overlapping top-left */}
             <div className="absolute left-0 top-0 w-[55%] h-[52%] rounded-3xl overflow-hidden shadow-xl border-4 border-white">
               <img
-                src="/images/frame15.png"
+                src="/images/frame14.png"
                 alt="Teaching session"
                 className="w-full h-full object-cover"
               />
