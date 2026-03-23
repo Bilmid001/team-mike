@@ -16,10 +16,8 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="font-sans bg-gray-100 text-gray-900 antialiased">
-        <div className="max-w-[430px] mx-auto bg-white min-h-screen shadow-lg relative">
-          {children}
-        </div>
+      <body className="font-sans bg-white text-gray-900 antialiased">
+        {children}
       </body>
     </html>
   );
