@@ -17,8 +17,8 @@ const features = [
     icon: Monitor,
     title: 'UX Design Course',
     description: 'Classes in development that cover the most recent advancements in web.',
-    iconBg: 'bg-orange-100',
-    iconColor: 'text-orange',
+    iconBg: 'bg-red-100',
+    iconColor: 'text-red-500',
     active: false,
   },
   {
