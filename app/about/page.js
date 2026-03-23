@@ -22,51 +22,16 @@ export default function AboutPage() {
         {/* ── HERO ── */}
         <section className="px-5 pt-8 pb-10">
 
-          <h1 className="text-3xl font-extrabold text-primary mb-6">
-            About TalentFlow
-          </h1>
+              {/* LEFT */}
+              <div>
+                <h1 className="text-4xl lg:text-5xl font-extrabold text-primary mb-4">
+                  About TalentFlow
+                </h1>
 
-          {/* Images */}
-          <div className="relative w-full mb-8" style={{ height: '280px' }}>
-
-            {/* Background shape */}
-            <div
-              className="absolute rounded-2xl bg-blue-100 z-0"
-              style={{ top: '20px', right: '0px', width: '85%', height: '230px' }}
-            />
-
-            {/* Large image */}
-            <div
-              className="absolute rounded-2xl overflow-hidden shadow-md z-10"
-              style={{ top: '0px', right: '8px', width: '72%', height: '190px' }}
-            >
-              <img
-                src="/images/Rectangle14.png"
-                alt="Learning environment"
-                className="w-full h-full object-cover block"
-              />
-            </div>
-
-            {/* Small image */}
-            <div
-              className="absolute rounded-2xl overflow-hidden shadow-lg border-4 border-white z-20"
-              style={{ bottom: '0px', left: '0px', width: '48%', height: '150px' }}
-            >
-              <img
-                src="/images/Rectangle13.png"
-                alt="Students working"
-                className="w-full h-full object-cover block"
-              />
-            </div>
-
-          </div>
-
-          {/* Text */}
-          <div className="space-y-4">
-            <h2 className="text-xl font-extrabold text-gray-900 leading-snug">
-              <span className="text-[#F59E0B]">TalentFlow</span> Is A Modern <br />
-              Learning Platform <br />Designed To Empower <br />Students.
-            </h2>
+                <h2 className="text-2xl lg:text-3xl font-extrabold text-gray-900 leading-snug mb-6">
+                  <span className="text-[#F59E0B]">TalentFlow</span> Is A Modern<br />
+                  Learning Platform Designed <br />To Empower Students.
+                </h2>
 
             <p className="text-gray-500 text-sm leading-relaxed">
               We provide a structured and engaging environment where users can access courses,
@@ -103,8 +68,9 @@ export default function AboutPage() {
             />
           </div>
 
-          <div className="space-y-4">
-            <p className="text-primary font-bold text-lg">Features</p>
+              {/* RIGHT TEXT */}
+              <div>
+                <p className="text-primary font-semibold text-sm mb-2 text-[22px]">Features</p>
 
             <h2 className="text-2xl font-extrabold text-gray-900 leading-tight">
               Empowering Your Learning Journey
@@ -121,43 +87,63 @@ export default function AboutPage() {
             </p>
             <p className="text-gray-500 text-sm">Learn smarter. Grow faster.</p>
 
-            <div className="pt-2">
-              <Link
-                href="/courses"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white text-sm font-semibold rounded-lg"
-              >
-                Learn More <ArrowRight size={16} />
-              </Link>
+                <p className="text-gray-500 text-sm mb-6">Learn smarter. Grow faster.</p>
+
+                <Link
+                  href="/courses"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white text-sm font-semibold rounded-lg shadow-md hover:bg-primary-dark transition"
+                >
+                  Learn More <ArrowRight size={16} />
+                </Link>
+              </div>
+
             </div>
           </div>
         </section>
 
         {/* ── BENEFITS ── */}
-        <section className="px-5 py-10 bg-[#f8fafc]">
+        <section className="py-20 bg-[#f8fafc]">
+          <div className="max-w-7xl mx-auto px-6">
 
-          <div className="text-center mb-10">
-            <p className="text-primary font-bold text-lg mb-2">Our Benefits</p>
-            <h2 className="text-2xl font-extrabold text-gray-900 mb-3">
-              Why Choose TalentFlow
-            </h2>
-            <p className="text-gray-500 text-sm">
-              By joining TalentFlow, you gain access to a powerful learning environment designed to help you succeed.
-            </p>
-          </div>
+            <div className="text-center mb-14">
+              <p className="text-primary font-semibold text-sm mb-4 text-[22px]">Our Benefits</p>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1">
-            {benefits.map((b, i) => (
-              <div
-                key={b.number}
-                className={`rounded-2xl p-6 ${i % 2 === 0 ? 'bg-blue-100' : 'bg-white shadow-sm'}`}
-              >
-                <p className="text-[#1E3A8A] font-extrabold text-2xl mb-3 opacity-60">
-                  {b.number}
-                </p>
-                <h3 className="font-bold text-gray-900 mb-2">{b.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{b.desc}</p>
-              </div>
-            ))}
+              <h2 className="text-3xl font-extrabold text-gray-900 mb-3">
+                Why Choose TalentFlow
+              </h2>
+
+              <p className="text-gray-500 text-sm max-w-md mx-auto">
+                By joining TalentFlow, you gain access to a powerful learning environment designed to help you succeed.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+              {benefits.map((b, i) => (
+                <div
+                  key={b.number}
+                  className={`rounded-2xl p-7 transition ${
+                    i % 2 === 0
+                      ? 'bg-blue-100'
+                      : 'bg-white shadow-sm'
+                  }`}
+                >
+                  <p className="text-primary font-extrabold text-2xl mb-4 opacity-60">
+                    {b.number}
+                  </p>
+
+                  <h3 className="font-bold text-gray-900 mb-2">
+                    {b.title}
+                  </h3>
+
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    {b.desc}
+                  </p>
+                </div>
+              ))}
+
+            </div>
+
           </div>
 
         </section>
